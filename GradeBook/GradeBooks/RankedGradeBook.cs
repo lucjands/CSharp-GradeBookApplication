@@ -22,7 +22,7 @@ namespace GradeBook.GradeBooks
             int StudentCount = Students.Count;
 
             int rank = StudentCount;
-            while (averageGrade < Students[rank-1].AverageGrade)
+            while (averageGrade <= Students[rank-1].AverageGrade)
                 rank--;
 
             double percentage = (double)rank / (double)StudentCount;
